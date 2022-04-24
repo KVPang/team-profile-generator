@@ -31,7 +31,8 @@ inquirer.prompt([
     },
 ]).then(response => {
     console.log(response)
-    (new Manager(response.name, response.id, response.email, response.office, response.email)
+    const newMgr = new Manager(response.name, response.id, response.email, response.office)
+    teamArr.push(newMgr)
     generateTeam();
 })
 
