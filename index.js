@@ -35,6 +35,7 @@ inquirer.prompt([
     generateTeam();
 })
 
+
 // prompt with a menu of options to add an intern, add an engineer, or finish building a team
 function generateTeam() {
     inquirer.prompt([
@@ -45,10 +46,63 @@ function generateTeam() {
             options: ["Intern", "Engineer", "I'm finished building my team"]
         }
 ])}
+
+// add an intern, engineer or finish building the team: 
 .then(response) => {
     console.log (response)
 }
 
 
-// engineer's name, ID, GitHub and email 
 
+// intern's name, ID number, email, school
+function intern () {
+    inquirer.prompt([
+        {
+            type: "input",
+            message: "Please provide the intern's name",
+            name: "name"
+        },
+        {
+            type: "input",
+            message: "What is the intern's ID number?",
+            name: "id"
+        },
+        {
+            type: "input",
+            message: "Please provide the intern's email address",
+            name: "email"
+        },
+        {
+            type: "input",
+            message: "Please provide the intern's school",
+            name: "school"
+        },
+    ])}
+
+
+// engineer's name, ID, GitHub and email 
+function engineer() {
+    inquirer.prompt([
+        {
+            type: "input",
+            message: "Please provide the engineer's name",
+            name: "name"
+        },
+        {
+            type: "input",
+            message: "What is the engineer's ID number?",
+            name: "id"
+        },
+        {
+            type: "input",
+            message: "Please provide the engineer's GitHub username",
+            name: "github"
+        },
+        {
+            type: "input",
+            message: "Please provide the engineer's email address",
+            name: "email"
+        },
+
+    ])
+}.then(response => {
