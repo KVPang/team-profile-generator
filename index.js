@@ -35,7 +35,7 @@ inquirer.prompt([
 })
 
 
-// prompt with a menu of options to add an intern, add an engineer, or finish building a team
+// prompt with a menu of options to add an intern, engineer, or finish building a team
 function generateTeam() {
     inquirer.prompt([{
             type: "list",
@@ -84,7 +84,7 @@ function intern() {
 }
 
 
-// engineer's name, ID, GitHub and email
+// engineer's name, ID, GitHub, and email
 function engineer() {
     inquirer.prompt([
         {
