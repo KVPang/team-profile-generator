@@ -55,9 +55,6 @@ function generateTeam() {
     })
 }
 
-// add an intern, engineer or finish building the team:
-
-
 // intern's name, ID number, email, school
 function intern() {
     inquirer.prompt([
