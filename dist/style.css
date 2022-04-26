@@ -5,3 +5,8 @@
 .card-header {
     background-image: linear-gradient(rgb(9, 189, 196), white);
 }
+
+.employee-card {
+    padding: 8px;
+    margin: 10px;
+}
